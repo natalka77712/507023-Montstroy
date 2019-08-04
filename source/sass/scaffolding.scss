@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $grey-dark;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 748px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $roboto;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  color: black;
+  background-color: $light-green;
+}

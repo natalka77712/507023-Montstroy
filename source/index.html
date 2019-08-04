@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: МонтСтрой</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <a class="page-header__logo-link">
+        <img class="page-header__logo-image" src="img/logo.png" width="141" height="60" alt="Логотип МонтСтрой">
+      </a>
+    </div>
+    <nav class="main-nav main-nav--closed">
+      <button type="button" class="main-nav__toggle" aria-label="Открыть меню"></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Услуги</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Проекты</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Партнеры</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <a class="page-header__contacts" href="tel:+4954526723">+7 (495) 452-67-23</a>
+    <a class="page-header__btn btn" href="#page-footer">Обратная связь</a>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">МонтСтрой</h1>
+    <section class="main-block">
+      <div class="main-block__container container">
+        <h2 class="main-block__title">Строительно-монтажные работы</h2>
+        <p class="main-block__desc main-block__desc--hidden">Работаем на российском рынке с <span class="main-block__green">1992</span> года</p>
+        <p class="main-block__description">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с <span class="main-block__green">1992</span> года,
+          и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных
+          и пуско-наладочных работ по электроснабжению зданий и сооружений.</p>
+        <div class="main-block__btn">
+          <a class="main-block__services-btn btn" href="#services">Наши услуги</a>
+          <a class="main-block__contact-btn btn" href="#form">Связаться с нами</a>
+        </div>
+        <div class="main-block__features">
+        <ul class="main-block__features-list">
+          <li class="main-block__features-item">Гарантированное высокоe качество продукции</li>
+          <li class="main-block__features-item">Исполнение всех<br> сроков и обязательств</li>
+          <li class="main-block__features-item">Собственная производственная база</li>
+        </ul>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <h2 class="services__title">Услуги</h2>
+      <ul class="services__list">
+        <li class="services__item">
+          <h3 class="services__header">Проектирование</h3>
+          <a class="services__link" href="#">Предварительная разработка концепции;</a>
+          <a class="services__link" href="#">Установка систем энергоснабжения;</a>
+          <a class="services__link" href="#">Оформление задания на проектирование;</a>
+          <a class="services__link" href="#">Разработка всей рабочей и проектной документации;</a>
+          <a class="services__link" href="#">Окончательное согласование проекта энергоснабжения в органах гос.надзора;</a>
+          <a class="services__link" href="#">Обеспечение авторского надзора на протяжении всего строительства (контроль за соблюдением всех норм и проектных разработок).</a>
+        </li>
+        <li class="services__item">
+          <h3 class="services__header">Инженерные изыскания</h3>
+          <a class="services__link" href="#">Инженерно-геодезические изыскания;</a>
+          <a class="services__link" href="#">Инженерно-геофизические изыскания;</a>
+          <a class="services__link" href="#">Инженерно-топографические изыскания;</a>
+          <a class="services__link" href="#">Инженерно-геологические изыскания;</a>
+          <a class="services__link" href="#">Изыскания грунтовых строительных материалов (проведение опытных полевых работ и обследование земляных сооружений);</a>
+          <a class="services__link" href="#">Инженерно-экологические (полевые работы, а также лабораторные и камеральные работы);</a>
+          <a class="services__link" href="#">Археологические;</a>
+          <a class="services__link" href="#">Кадастровые и землеустроительные.</a>
+        </li>
+        <li class="services__item">
+          <h3 class="services__header">Строительно-монтажные работы</h3>
+          <a class="services__link" href="#">Строительство и реконструкция подстанций до 500 кВ и распределительных устройств станций до 500 кВ;</a>
+          <a class="services__link" href="#">Строительство распределительных пунктов;</a>
+          <a class="services__link" href="#">Внедрение систем автоматизации управления оборудованием подстанций до 500 кВ;</a>
+          <a class="services__link" href="#">Вынос действующих кабелей из строительной зоны;</a>
+          <a class="services__link" href="#">Обеспечение временного электроснабжения;</a>
+          <a class="services__link" href="#">Монтаж электрооборудования.</a>
+        </li>
+        <li class="services__item">
+          <h3 class="services__header">Эксплуатация и сервисное обслуживание</h3>
+          <a class="services__link" href="#">Эксплуатация электрики зданий и энергоустановок, снабжающих энергией эксплуатируемые сооружения;</a>
+          <a class="services__link" href="#">Эксплуатация систем отопления объектов с проведением плановых сезонных мероприятий</a>
+          <a class="services__link" href="#">Эксплуатация систем ХВС и ГВС эксплуатируемого здания;</a>
+          <a class="services__link" href="#">Сервисное обслуживание и эксплуатация систем водоснабжения, водоподготовки и фильтрации в обслуживаемом здании;</a>
+          <a class="services__link" href="#">Обслуживание системы дренажа, канализации и ливнестоков: прочистка, промывка, вывоз отходов за территорию;</a>
+          <a class="services__link" href="#">Сезонная перенастройка автоматических элементов систем эксплуатации здания и другое.</a>
+        </li>
+        <li class="services__item">
+          <h3 class="services__header">Электролаборатория</h3>
+          <a class="services__link" href="#">Проверка состояния различных элементов устройств заземления;</a>
+          <a class="services__link" href="#">Проверка наличия цепи, проведение замеров сопротивлений (переходных) между заземляющими проводниками и заземлителями, проверку металлосвязи;</a>
+          <a class="services__link" href="#">Проверка систем молниезащиты;</a>
+          <a class="services__link" href="#">Измерение сопротивления изоляции электрических кабелей, аппаратов, электропроводок и электрооборудования;</a>
+          <a class="services__link" href="#">Измерение сопротивления заземления и заземляющих устройств;</a>
+          <a class="services__link" href="#">Поиск кабельных трасс, мест повреждения и «прожиг кабеля»;</a>
+          <a class="services__link" href="#">Проведение всех необходимых испытаний и измерений для кабельных линий, включая кабель с изоляцией из сшитого полиэтилена до 220 кВ.</a>
+        </li>
+        <li class="services__item">
+          <h3 class="services__header">Услуги по технологическому присоединению</h3>
+          <a class="services__link" href="#">Оказание технико-экономического консалтинга в составлении договора на технологическое присоединение мощности потребителя к сетям электросетевых компаний;</a>
+          <a class="services__link" href="#">Обследование присоединяемых устройств ответственным лицом по государственному надзору при участии сетевого оператора и собственника устройства;</a>
+          <a class="services__link" href="#">Фактическое присоединение объектов заявителя к сетям оператора;</a>
+          <a class="services__link" href="#">Составление и согласование необходимой технической документации для ввода в эксплуатацию объекта;</a>
+          <a class="services__link" href="#">Ввод присоединенного объекта в эксплуатацию.</a>
+        </li>
+      </ul>
+    </section>
+    <section class="projects">
+      <h2 class="projects__title">Проекты</h2>
+      <ul class="projects__list">
+        <li class="projects__item">
+          <h3 class="projects__header">Стадион «Футур»</h3>
+          <p class="projects__description">В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство распределительной сети мощностью 20кВ</p>
+          <a class="projects__link" href="#" aria-label="Перейти по ссылке"></a>
+        </li>
+        <li class="projects__item">
+          <h3 class="projects__header">Бизнес-центр «Ореол»</h3>
+          <p class="projects__description">Специалисты провели масштабную работу по организации АСКУЭ на 694 точки учета комплекса с апартаментами</p>
+          <a class="projects__link" href="#" aria-label="Перейти по ссылке"></a>
+        </li>
+        <li class="projects__item">
+          <h3 class="projects__header">Кинотеатр «Семейный»</h3>
+          <p class="projects__description">Специалисты выполнили комплекс работ по системам  учета электроэнергии</p>
+          <a class="projects__link" href="#" aria-label="Перейти по ссылке"></a>
+        </li>
+        <li class="projects__item">
+          <h3 class="projects__header">ТК «Medial»</h3>
+          <p class="projects__description">В целях обеспечения электроэнергией телевизионного комплекса  было осуществлено строительство распределительной сети мощностью 20кВ</p>
+          <a class="projects__link" href="#" aria-label="Перейти по ссылке"></a>
+        </li>
+        <li class="projects__item">
+          <h3 class="projects__header">ОАО «ЭнергоНацКомпани»</h3>
+          <p class="projects__description">Компанией были выполнены строительно-монтажные и пусконаладочные работы, а также поставлены материалы
+              и оборудование при осуществлении ремонта электросетевого имущества кабельных линий 220 кВ для ОАО «ЭнергоНацКомпани»</p>
+          <a class="projects__link" href="#" aria-label="Перейти по ссылке"></a>
+        </li>
+        <li class="projects__item">
+          <h3 class="projects__header">Театр «Буратино»</h3>
+          <p class="projects__description">Специалистами  были проведены комплексные электро-монтажные и пуско-наладочные работы по механизации сценических подъемников в здании театра</p>
+          <a class="projects__link" href="#" aria-label="Перейти по ссылке"></a>
+        </li>
+      </ul>
+    </section>
+    <section class="partners">
+      <h2 class="partners__title">Партнеры</h2>
+      <div class="partners__toggles-nav">
+        <button class="partners__toggles partners__toggles--prev" type="button"></button>
+        <button class="partners__toggles partners__toggles--next" type="button"></button>
+      </div>
+      <ul class="partners__list">
+        <li class="partners__item">
+          <a class="partners__link" href="#"></a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#"></a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#"></a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#"></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer" id="page-footer">
+    <h2 class="page-footer__title">Контакты</h2>
+    <div class="page-footer__map"></div>
+    <a class="page-footer__logo-link">
+      <img src="img/logo.png" width="141" height="60" alt="Логотип МонтСтрой">
+    </a>
+    <p class="page-footer__owner">ЗАО «НCП «МонтCтрой»</p>
+    <ul class="page-footer__menu">
+      <li class="page-footer__item">
+        <a class="page-footer__link">Главная</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="#">Услуги</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="#">Проекты</a>
+      </li>
+      <li class="page-footer__item">
+        <a class="page-footer__link" href="#">Партнеры</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="page-footer__link" href="#">Контакты</a>
+      </li>
+    </ul>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--vk" href="#" aria-label="vkontakte">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--tw" href="#" aria-label="twitter">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--fb" href="#" aria-label="facebook">
+        </a>
+      </li>
+    </ul>
+    <div class="page=footer__form form" id="form">
+      <form class="form__type" method="post" action="#">
+        <h3 class="form__title">Свяжитесь с нами</h3>
+        <label for="user-name" class="form__text-label">Имя</label>
+        <input type="text" class="form__text-input" id="user-name" name="user-name" required="">
+        <label for="phone" class="form__text-label form__text-label--phone">Телефон</label>
+        <input class="form__text-input form__text-input--phone" id="phone" type="tel" name="phone" required="">
+        <label for="email" class="form__text-label">E-mail</label>
+        <input type="email" class="form__text-input form__text-input--email" id="email" name="email-owner">
+        <label class="form__text-label form__text-label--message" for="message">Сообщение</label>
+        <textarea class="form__text-input form__text-input--mesage" id="message"  name="message" required=""></textarea>
+        <p class="form__info">Заполняя форму на сайте, вы соглашаетесь с нашей<a href="#">Политикой конфиденциальности</a></p>
+        <button class="form__btn-submit btn" type="submit">Отправить</button>
+      </form>
+    </div>
+    <div class="page-footer__contacts contacts">
+      <p class="contacts__adress">Варшавское шоссе, д, 118, к.1 Бизнес-центр «ВАРШАВКА Sky»</p>
+      <a class="contacts__email" href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
+      <p class="contacts__phone"><a href="tel:+74954526723">+7 (495) 452-67-23</a><span class="contacts__note">Ежедневно с 9:00 до 18:00</span></p>
+    </div>
+    <p class="page-foote__copyright">1992-2018 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+  </footer>
+
+</body>
+</html>
