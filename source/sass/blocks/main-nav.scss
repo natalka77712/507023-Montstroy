@@ -1,9 +1,13 @@
 .main-nav__toggle {
+  display: block;
+  content: "";
   position: absolute;
   top: 23px;
   right: 20px;
+  height: 19px;
   z-index: 2;
   border: none;
+  background-color: transparent;
   cursor: pointer;
   outline: none;
 }
@@ -49,29 +53,9 @@
     display: none;
   }
 
-  .main-nav--closed .main-nav__toggle,
-  .main-nav--opened .main-nav__toggle {
+  .main-nav--closed .main-nav__toggle {
+    background: url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
     width: 20px;
-    height: 2px;
-    border-radius: 1px;
-    background-color: $grey-cloud;
-
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 7px;
-      right: 0;
-      display: block;
-      width: 100%;
-      height: 2px;
-      border-radius: 1px;
-      background-color: $grey-cloud;
-    }
-
-    &::after {
-      top: 14px;
-    }
   }
 
   .main-nav--opened .main-nav__list {
@@ -80,6 +64,11 @@
 
   .main-nav--no-js .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    background: url("../img/icon-close.svg") no-repeat 50% 50%;
+    width: 19px;
   }
 }
 

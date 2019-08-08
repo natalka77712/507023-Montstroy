@@ -3,3 +3,33 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .toggles {
+    &--hidden {
+      display: block;
+    }
+  }
+
+  .toggles__item {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    background-color: $grey-coin;
+
+    &--active {
+      background-color: $light-green;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .toggles {
+    &--hidden {
+      display: none;
+    }
+  }
+}
