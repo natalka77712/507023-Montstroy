@@ -1,28 +1,24 @@
-.toggles {
-  &--hidden {
-    display: none;
+.toggles__item {
+  width: 6px;
+  height: 6px;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background-color: $grey-coin;
+
+  &--active {
+    width: 8px;
+    height: 8px;
+    background-color: $light-green;
   }
 }
 
 @media (min-width: $tablet-width) {
-  .toggles {
-    &--hidden {
-      display: block;
-    }
-  }
-
   .toggles__item {
     width: 8px;
     height: 8px;
-    margin: 0 2px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: none;
-    background-color: $grey-coin;
-
-    &--active {
-      background-color: $light-green;
-    }
   }
 }
 

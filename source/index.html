@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: МонтСтрой</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
   <header class="page-header">
@@ -39,51 +39,52 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">МонтСтрой</h1>
-    <section class="main-block container">
-      <h2 class="main-block__title">Строительно-монтажные работы</h2>
-      <p class="main-block__desc main-block__desc--hidden">Работаем на российском рынке с <span class="main-block__green">1992</span> года</p>
-      <p class="main-block__description">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с <span class="main-block__green">1992</span> года,
+    <section class="main-block">
+      <div class="main-block__index container">
+        <h2 class="main-block__title">Строительно-монтажные работы</h2>
+        <p class="main-block__desc main-block__desc--hidden">Работаем на российском рынке с <span class="main-block__green">1992</span> года</p>
+        <p class="main-block__description">Компания ЗАО «НCП «МонтCтрой» успешно работает на российском рынке с <span class="main-block__green">1992</span> года,
           и за это время зарекомендовала себя как ведущий разработчик качественных систем установок для предприятий, выполняет полный комплекс строительно-монтажных
           и пуско-наладочных работ по электроснабжению зданий и сооружений.</p>
-      <div class="main-block__btn">
-        <a class="main-block__services-btn btn" href="#services">Наши услуги</a>
-        <a class="main-block__contact-btn btn" href="#form">Связаться с нами</a>
-      </div>
-      <div class="main-block__features">
-        <div class="main-block__features-container container">
-          <ul class="main-block__features-list">
-            <li class="main-block__features-item main-block__features-item--garantee">
-              <span>Гарантированное высокоe качество продукции</span>
-            </li>
-            <li class="main-block__features-item main-block__features-item--conditions main-block__features-item--active">
-              <span>Исполнение всех<br> сроков и обязательств</span>
-            </li>
-            <li class="main-block__features-item main-block__features-item--production">
-              <span>Собственная производственная база</span>
-            </li>
-          </ul>
+        <div class="main-block__btn">
+          <a class="main-block__services-btn btn" href="#services">Наши услуги</a>
+          <a class="main-block__contact-btn btn" href="#form">Связаться с нами</a>
         </div>
-        <div class="main-block__features-toggles toggles toggles--hidden">
-        <button class="toggles__item" type="button" aria-label="Предыдущий слайд">
-        </button>
-        <button class="toggles__item toggles__item--active" type="button" aria-label="Текущий слайд">
-        </button>
-        <button class="toggles__item" type="button" aria-label="Следующий слайд">
-        </button>
+      </div>
+      <div class="main-block__features features">
+        <div class="features container">
+        <ul class="features__list">
+          <li class="features__item features__item--garantee">
+            <span>Гарантированное высокоe качество продукции</span>
+          </li>
+          <li class="features__item features__item--conditions features__item--active">
+            <span>Исполнение всех<br> сроков и обязательств</span>
+          </li>
+          <li class="features__item features__item--production">
+            <span>Собственная производственная база</span>
+          </li>
+        </ul>
+        <div class="features__toggles toggles toggles--hidden">
+          <button class="toggles__item" type="button" aria-label="Предыдущий слайд">
+          </button>
+          <button class="toggles__item toggles__item--active" type="button" aria-label="Текущий слайд">
+          </button>
+          <button class="toggles__item" type="button" aria-label="Следующий слайд">
+          </button>
+        </div>
       </div>
       </div>
     </section>
-    <section class="services" id="services">
+    <section class="services container" id="services">
       <h2 class="services__title">Услуги</h2>
       <ul class="services__list">
-        <li class="services__item">
+        <li class="services__item services__item--active">
           <h3 class="services__header">Проектирование</h3>
-          <a class="services__link" href="#">Предварительная разработка концепции;</a>
           <a class="services__link" href="#">Установка систем энергоснабжения;</a>
           <a class="services__link" href="#">Оформление задания на проектирование;</a>
           <a class="services__link" href="#">Разработка всей рабочей и проектной документации;</a>
           <a class="services__link" href="#">Окончательное согласование проекта энергоснабжения в органах гос.надзора;</a>
-          <a class="services__link" href="#">Обеспечение авторского надзора на протяжении всего строительства (контроль за соблюдением всех норм и проектных разработок).</a>
+          <a class="services__link" href="#">Обеспечение авторского надзора на протяжении всего строительства<span> (контроль за соблюдением всех норм и проектных разработок).</span></a>
         </li>
         <li class="services__item">
           <h3 class="services__header">Инженерные изыскания</h3>

@@ -56,6 +56,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -96,7 +97,7 @@ img {
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 748px;
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 22px;
