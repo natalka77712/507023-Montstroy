@@ -58,6 +58,7 @@
   }
 
   .page-header__contacts {
+    max-width: 170px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -67,8 +68,14 @@
     margin-left: 23px;
     display: inline-block;
     align-self: center;
+    flex: 0 0 190px;
     font-size: 16px;
     line-height: 40px;
     font-family: inherit;
+
+    &:hover,
+    &:active {
+      box-shadow: 0 2px 5px 0 rgba(0, 255, 216, 0.6);
+    }
   }
 }

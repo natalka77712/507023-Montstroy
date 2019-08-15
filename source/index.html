@@ -1,9 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/RalewayBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RalewayBlack.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoRegular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoMedium.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoBold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoBlack.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Circe-regular.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RalewayBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RalewayBlack.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoRegular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoMedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/RobotoBlack.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Circe-regular.woff2" as="font" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Academy: МонтСтрой</title>
     <link href="css/style.min.css" rel="stylesheet">
@@ -58,7 +71,7 @@
             <span>Гарантированное высокоe качество продукции</span>
           </li>
           <li class="features__item features__item--conditions features__item--active">
-            <span>Исполнение всех<br> сроков и обязательств</span>
+            <span>Исполнение всех сроков&nbsp;и&nbsp;обязательств</span>
           </li>
           <li class="features__item features__item--production">
             <span>Собственная производственная база</span>
@@ -142,7 +155,7 @@
           <picture>
             <source media="(min-width: 1180px)" srcset="img/project-futur-desk.jpg">
             <source media="(min-width: 768px)" srcset="img/project-futur-tab.jpg">
-            <img class="project__img" src="img/project-futur-mob.jpg" alt="Стадион «Футур»">
+            <img class="projects__img" src="img/project-futur-mob.jpg" alt="Стадион «Футур»">
           </picture>
           <h3 class="projects__header">Стадион «Футур»</h3>
           <p class="projects__description">В целях обеспечения электроэнергией стадиона специалистами было осуществлено строительство распределительной сети мощностью 20кВ</p>
@@ -152,7 +165,7 @@
             <picture>
               <source media="(min-width: 1180px)" srcset="img/project-oreol-desk.jpg">
               <source media="(min-width: 768px)" srcset="img/project-oreol-tab.jpg">
-              <img class="project__img" src="img/project-oreol-mob.jpg" alt="Бизнес-центр «Ореол»">
+              <img class="projects__img" src="img/project-oreol-mob.jpg" alt="Бизнес-центр «Ореол»">
             </picture>
           <h3 class="projects__header">Бизнес-центр «Ореол»</h3>
           <p class="projects__description">Специалисты провели масштабную работу по организации АСКУЭ на 694 точки учета комплекса с апартаментами</p>
@@ -162,7 +175,7 @@
           <picture>
             <source media="(min-width: 1180px)" srcset="img/project-family-desk.jpg">
             <source media="(min-width: 768px)" srcset="img/project-family-tab.jpg">
-            <img class="project__img" src="img/project-family-mob.jpg" alt="Кинотеатр «Семейный»">
+            <img class="projects__img" src="img/project-family-mob.jpg" alt="Кинотеатр «Семейный»">
           </picture>
           <h3 class="projects__header">Кинотеатр «Семейный»</h3>
           <p class="projects__description">Специалисты выполнили комплекс работ по системам  учета электроэнергии</p>
@@ -172,7 +185,7 @@
           <picture>
             <source media="(min-width: 1180px)" srcset="img/project-medial-desk.jpg">
             <source media="(min-width: 768px)" srcset="img/project-medial-tab.jpg">
-            <img class="project__img" src="img/project-medial-mob.jpg" alt="ТК «Medial»">
+            <img class="projects__img" src="img/project-medial-mob.jpg" alt="ТК «Medial»">
           </picture>
           <h3 class="projects__header">ТК «Medial»</h3>
           <p class="projects__description">В целях обеспечения электроэнергией телевизионного комплекса  было осуществлено строительство распределительной сети мощностью 20кВ</p>
@@ -182,7 +195,7 @@
           <picture>
             <source media="(min-width: 1180px)" srcset="img/project-energo-desk.jpg">
             <source media="(min-width: 768px)" srcset="img/project-energo-tab.jpg">
-            <img class="project__img" src="img/project-energo-mob.jpg" alt="ОАО «ЭнергоНацКомпани»">
+            <img class="projects__img" src="img/project-energo-mob.jpg" alt="ОАО «ЭнергоНацКомпани»">
           </picture>
           <h3 class="projects__header">ОАО «ЭнергоНацКомпани»</h3>
           <p class="projects__description">Компанией были выполнены строительно-монтажные и пусконаладочные работы, а также поставлены материалы
@@ -193,7 +206,7 @@
           <picture>
             <source media="(min-width: 1180px)" srcset="img/project-buratino-desk.jpg">
             <source media="(min-width: 768px)" srcset="img/project-buratino-tab.jpg">
-            <img class="project__img" src="img/project-buratino-mob.jpg" alt="Театр «Буратино»">
+            <img class="projects__img" src="img/project-buratino-mob.jpg" alt="Театр «Буратино»">
           </picture>
           <h3 class="projects__header">Театр «Буратино»</h3>
           <p class="projects__description">Специалистами  были проведены комплексные электро-монтажные и пуско-наладочные работы по механизации сценических подъемников в здании театра</p>
@@ -243,7 +256,7 @@
       <li class="page-footer__item">
         <a class="page-footer__link" href="#">Партнеры</a>
       </li>
-      <li class="main-nav__item">
+      <li class="page-footer__item">
         <a class="page-footer__link" href="#">Контакты</a>
       </li>
     </ul>
@@ -261,7 +274,7 @@
         </a>
       </li>
     </ul>
-    <div class="page=footer__form form" id="form">
+    <div class="page-footer__form form" id="form">
       <form class="form__type" method="post" action="#">
         <h3 class="form__title">Свяжитесь с нами</h3>
         <label for="user-name" class="form__text-label">Имя</label>
@@ -281,7 +294,7 @@
       <a class="contacts__email" href="mailto:zao@montstroy.ru">zao@montstroy.ru</a>
       <p class="contacts__phone"><a href="tel:+74954526723">+7 (495) 452-67-23</a><span class="contacts__note">Ежедневно с 9:00 до 18:00</span></p>
     </div>
-    <p class="page-foote__copyright">1992-2018 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
+    <p class="page-footer__copyright">1992-2018 ©  ЗАО “НСП ”МонтСтрой”. Все права защищены</p>
   </footer>
 
   <script src="js/main.js"></script>
