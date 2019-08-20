@@ -7,20 +7,22 @@
   margin: 0 0 25px;
   font-size: 20px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 900;
+  letter-spacing: 0.8px;
   font-family: $raleway;
   text-transform: uppercase;
 }
 
-.services__list {
+.services__list,
+.services__item ul {
   @include reset-list;
 }
 
 .services__header {
   position: relative;
   margin: 0 -20px 10px;
-  padding: 12px 20px;
-  font-size: 16px;
+  padding: 12px 21px;
+  font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
@@ -38,8 +40,9 @@
     background-position: right;
   }
 
-  .services__item--active & {
+  .services__item--opened & {
     margin-bottom: 0;
+    font-size: 16px;
     border: 1px solid $green;
     box-shadow: inset 0 2px 10px 2px rgba(0, 255, 215, 0.65);
   }
@@ -48,10 +51,9 @@
 .services__link {
   display: none;
 
-  .services__item--active & {
+  .services__item--opened & {
     margin: 0 -20px;
     padding: 12px 20px;
-    display: block;
     font-size: 12px;
     line-height: 15px;
     text-decoration: none;
@@ -60,8 +62,18 @@
   }
 }
 
-span {
-  display: none;
+@media (max-width: $desktop-width - 1) {
+  .services__item--closed .services__link {
+    display: none;
+  }
+
+  .services__item--opened .services__link {
+    display: block;
+  }
+
+  .services__item--no-js .services__link {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -82,7 +94,7 @@ span {
     font-size: 14px;
     line-height: 17px;
 
-    .services__item--active & {
+    .services__item--opened & {
       margin-bottom: 0;
       border: none;
       box-shadow: none;
@@ -95,13 +107,12 @@ span {
     line-height: 17px;
     background-color: $grey-silver;
 
-    .services__item--active & {
+    .services__item--opened & {
       margin: 0;
-      display: none;
     }
 
     &:hover {
-      border: 1px solid $green;
+      outline: 1px solid $green;
       box-shadow: inset 0 2px 10px 2px rgba(0, 255, 215, 0.65);
     }
   }
@@ -119,6 +130,7 @@ span {
     line-height: 50px;
     margin: 0 0 30px;
     font-weight: 900;
+    letter-spacing: 1.2px;
   }
 
   .services__header {
@@ -128,11 +140,11 @@ span {
     padding-bottom: 17px;
     font-size: 16px;
     line-height: 26px;
-    font-weight: 700;
+    font-weight: 900;
     box-shadow: none;
     background-color: white;
 
-    .services__item--active & {
+    .services__item--opened & {
       background-color: white;
     }
 
@@ -143,6 +155,7 @@ span {
 
   .services__item {
     flex: 0 0 360px;
+    max-width: 360px;
     margin-bottom: 44px;
     padding: 33px 54px 0 42px;
     box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
@@ -161,7 +174,7 @@ span {
     background-color: white;
     opacity: 0.77;
 
-    .services__item--active & {
+    .services__item--opened & {
       display: block;
       border-bottom: none;
       padding: 0 0 12px;
@@ -170,12 +183,8 @@ span {
     &:hover {
       box-shadow: none;
       border: none;
-      border-bottom: 1 px solid black;
+      text-decoration: underline;
       opacity: 0.77;
     }
-  }
-
-  span {
-    display: block;
   }
 }
