@@ -1,32 +1,31 @@
 .toggles__item {
-  width: 6px;
-  height: 6px;
-  margin: 0 2px;
-  padding: 0;
-  cursor: pointer;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  background-color: $grey-coin;
-
-  &--active {
-    width: 8px;
-    height: 8px;
-    background-color: $light-green;
-  }
+  display: none;
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $desktop-width) {
   .toggles__item {
+    display: block;
     width: 8px;
     height: 8px;
+    margin: 0 2px;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: $grey-coin;
+
+    &--active {
+      width: 8px;
+      height: 8px;
+      background-color: $light-green;
+    }
   }
 }
 
-@media (min-width: $desktop-width) {
-  .toggles {
-    &--hidden {
-      display: none;
-    }
+@media (max-width: $tablet-width) {
+  .toggles__item {
+    width: 6px;
+    height: 6px;
   }
 }

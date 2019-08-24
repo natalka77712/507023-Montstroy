@@ -1,0 +1,41 @@
+.text-title {
+  position: relative;
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 900;
+  font-family: $raleway;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 300px;
+    width: 74%;
+    height: 2px;
+    background-color: black;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .text-title {
+    padding-left: 0;
+    font-size: 26px;
+    line-height: 31px;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .text-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 900;
+    letter-spacing: 0.8px;
+    font-family: $raleway;
+  }
+}

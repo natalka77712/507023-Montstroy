@@ -1,16 +1,30 @@
 .services {
-  margin-top: 50px;
-  margin-bottom: 60px;
+  margin: 100px 0 65px;
+  padding: 0;
+}
+
+.services__header {
+  margin: 0;
+  border: 0;
+  padding: 0 0 22px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: white;
+
+  &--construction-works {
+    padding: 0 0 10px;
+  }
+
+  &--process-connection {
+    padding: 0 0 14px;
+  }
 }
 
 .services__title {
-  margin: 0 0 25px;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 900;
-  letter-spacing: 0.8px;
-  font-family: $raleway;
-  text-transform: uppercase;
+  margin: 0 0 20px;
+  padding-left: 10px;
 }
 
 .services__list,
@@ -18,47 +32,39 @@
   @include reset-list;
 }
 
-.services__header {
-  position: relative;
-  margin: 0 -20px 10px;
-  padding: 12px 21px;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  text-transform: uppercase;
-  background-color: $grey-pinkish;
+.services__list {
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  &::after {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    content: "";
-    width: 8px;
-    height: 5px;
-    background-image: url("../img/icon-select.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-  }
-
-  .services__item--opened & {
-    margin-bottom: 0;
-    font-size: 16px;
-    border: 1px solid $green;
-    box-shadow: inset 0 2px 10px 2px rgba(0, 255, 215, 0.65);
-  }
+.services__item {
+  flex: 0 0 360px;
+  margin-bottom: 43px;
+  padding: 32px 53px 0 39px;
+  box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
+  min-height: 497px;
 }
 
 .services__link {
-  display: none;
+  display: block;
+  margin: 0;
+  padding: 0 0 14px;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  opacity: 0.77;
 
-  .services__item--opened & {
-    margin: 0 -20px;
-    padding: 12px 20px;
-    font-size: 12px;
-    line-height: 15px;
-    text-decoration: none;
-    color: black;
-    border-bottom: 1px solid $grey-pinkish;
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.77;
+  }
+
+  &span {
+    display: block;
   }
 }
 
@@ -76,29 +82,67 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $desktop-width) {
+  .services {
+    margin: 0 auto 0;
+    padding: 0 22px;
+  }
+
+  .services__title {
+    margin: 44px 0 25px;
+  }
+
   .services__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 0;
   }
 
   .services__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     flex: 0 0 352px;
     margin-bottom: 10px;
+    padding: 0;
+    min-height: auto;
+    box-shadow: none;
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: "";
+      top: 22px;
+      right: 20px;
+      width: 0;
+      height: 0;
+      border-top: 5px solid #aeadad;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+    }
+
+    &--opened::after {
+      border-top: 5px solid black;
+    }
   }
 
   .services__header {
+    display: inherit;
     margin: 0;
-    padding: 17px 20px;
+    padding: 0 73px 0 22px;
+    min-height: 50px;
     font-size: 14px;
     line-height: 17px;
+    font-weight: 400;
+    align-items: center;
 
     .services__item--opened & {
       margin-bottom: 0;
       border: none;
       box-shadow: none;
       background-color: $grey-fossil;
+    }
+
+    .services__item--closed & {
+      background-color: $grey-silver;
     }
   }
 
@@ -109,82 +153,77 @@
 
     .services__item--opened & {
       margin: 0;
+      padding: 12px 20px;
     }
 
     &:hover {
       outline: 1px solid $green;
       box-shadow: inset 0 2px 10px 2px rgba(0, 255, 215, 0.65);
+      text-decoration: none;
     }
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (max-width: $tablet-width) {
   .services {
-    margin-top: 108px;
-    margin-bottom: 110px;
-    padding: 0;
-  }
-
-  .services__title {
-    font-size: 30px;
-    line-height: 50px;
-    margin: 0 0 30px;
-    font-weight: 900;
-    letter-spacing: 1.2px;
+    margin-top: 46px;
+    margin-bottom: 42px;
   }
 
   .services__header {
-    margin-bottom: 0;
-    border: 0;
-    padding: 0;
-    padding-bottom: 17px;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 900;
-    box-shadow: none;
-    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 -20px 8px;
+    padding: 16px 20px;
+    max-height: 58px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    background-color: $grey-pinkish;
 
     .services__item--opened & {
+      margin-bottom: 0;
+      font-size: 16px;
+      border: 1px solid $green;
+      box-shadow: inset 0 2px 10px 2px rgba(0, 255, 215, 0.65);
+    }
+  }
+
+  .services__title {
+    margin: 0 0 25px;
+  }
+
+  .services__link {
+    display: none;
+
+    .services__item--opened & {
+      display: flex;
+      align-items: center;
+      margin: 0 -20px;
+      padding: 0 30px 0 20px;
+      min-height: 40px;
+      font-size: 12px;
+      line-height: 15px;
+      color: black;
       background-color: white;
+      border-bottom: 1px solid $grey-pinkish;
+      box-shadow: none;
+      outline: none;
     }
 
-    &::after {
+    & span {
       display: none;
     }
   }
 
   .services__item {
-    flex: 0 0 360px;
-    max-width: 360px;
-    margin-bottom: 44px;
-    padding: 33px 54px 0 42px;
-    box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.05);
-    min-height: 500px;
-  }
+    flex: auto;
+    margin-bottom: 0;
+    width: 100%;
 
-  .services__link {
-    display: block;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 12px;
-    font-size: 13px;
-    line-height: 16px;
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    opacity: 0.77;
-
-    .services__item--opened & {
-      display: block;
-      border-bottom: none;
-      padding: 0 0 12px;
-    }
-
-    &:hover {
-      box-shadow: none;
-      border: none;
-      text-decoration: underline;
-      opacity: 0.77;
+    &::after {
+      top: 25px;
+      right: 0;
     }
   }
 }

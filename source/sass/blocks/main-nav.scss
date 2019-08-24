@@ -112,13 +112,12 @@
 
 @media (max-width: $tablet-width) {
   .main-nav__toggle {
-    top: 23px;
-    right: 20px;
+    top: 12px;
+    right: 22px;
     height: 19px;
-    z-index: 2;
 
     .main-nav--closed & {
-      width: 22px;
+      width: 19px;
     }
   }
 
@@ -127,5 +126,6 @@
     display: none;
     margin: 0;
     width: 100%;
+    max-width: initial;
   }
 }
