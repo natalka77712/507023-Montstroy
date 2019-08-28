@@ -1,0 +1,46 @@
+.contacts__address,
+.contacts__email,
+.contacts__phone a,
+.contacts__note {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: $roboto;
+  color: white;
+}
+
+.contacts__address {
+  margin-bottom: 45px;
+}
+
+.contacts__email {
+  display: block;
+  margin-bottom: 38px;
+  font-weight: 700;
+}
+
+.contacts__phone {
+  margin: 0;
+  font-weight: 700;
+}
+
+.contacts__phone a {
+  text-decoration: none;
+}
+
+.contacts__note {
+  display: block;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contacts__item {
+  display: flex;
+}
+
+.contacts__icon {
+  margin-right: 15px;
+  fill: $emerald;
+}

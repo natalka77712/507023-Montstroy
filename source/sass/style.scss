@@ -5,11 +5,16 @@
 @import "scaffolding.scss";
 
 //Blocks
+@import "blocks/contacts.scss";
 @import "blocks/features.scss";
+@import "blocks/form.scss";
 @import "blocks/main-block.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/partners.scss";
 @import "blocks/projects.scss";
 @import "blocks/services.scss";
+@import "blocks/social.scss";
 @import "blocks/text-title.scss";
 @import "blocks/toggles.scss";

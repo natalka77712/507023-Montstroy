@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 153px;
   background: url("../img/main-desk.jpg") no-repeat;
-  background-position: right 0 top -94px;
+  background-position: right -42px top -100px;
   background-color: $dark-blue;
 
   &::before {
@@ -22,15 +22,13 @@
 }
 
 .main-block__index {
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
 
 .main-block__title {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
   max-width: 100%;
   font-size: 72px;
   line-height: 86px;
@@ -61,7 +59,7 @@
 
 
 .main-block__btn {
-  margin-bottom: 114px;
+  margin-bottom: 110px;
   display: flex;
   align-items: baseline;
 }
@@ -113,14 +111,12 @@
 
   .main-block__index {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 126px 42px 0 82px;
+    padding: 124px 84px 0;
     min-height: 600px;
   }
 
   .main-block__title {
-    margin: 0 0 14px;
+    margin: 0 0 17px;
     max-width: 620px;
     font-size: 38px;
     line-height: 46px;
@@ -133,7 +129,7 @@
   }
 
   .main-block__description {
-    margin: 0 0 85px;
+    margin: 0 0 89px;
     padding: 0;
     max-width: 600px;
     font-size: 16px;
@@ -176,7 +172,7 @@
   }
 
   .main-block__index {
-    padding: 128px 20px 0;
+    padding: 131px 20px 0;
     min-height: auto;
 
     &::before {
@@ -220,7 +216,7 @@
 
   .main-block__description {
     margin: 0 -20px;
-    padding: 36px 20px 40px;
+    padding: 36px 20px 45px;
     order: 4;
     font-size: 12px;
     line-height: 18px;

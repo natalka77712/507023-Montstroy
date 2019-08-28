@@ -1,0 +1,138 @@
+.form__wrapper,
+.form__part,
+.form__top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__top {
+  padding-bottom: 26px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form__part {
+  padding: 0;
+  margin: 0;
+  width: 177px;
+  flex-direction: column;
+
+  &--bottom,
+  &--center {
+    width: 100%;
+  }
+
+  &--bottom {
+    padding-bottom: 25px;
+  }
+
+  &--center {
+    padding-bottom: 31px;
+  }
+}
+
+.form__title {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 25px;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-family: $raleway;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form__text-label {
+  font-size: 20px;
+  line-height: 50px;
+  letter-spacing: 0.8px;
+  font-family: $roboto;
+  color: black;
+}
+
+.form__text-input {
+  padding: 0;
+  line-height: 10px;
+  font-family: inherit;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  color: black;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid black;
+  }
+}
+
+.form__info {
+  margin: 0 67px 33px;
+  width: 301px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+
+  & a {
+    display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.form__btn-submit {
+  display: block;
+  margin: 0 100px;
+  padding: 4px 35px;
+  width: 230px;
+  font-size: 25px;
+  line-height: 50px;
+  font-family: $raleway;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 3px solid transparent;
+  background-color: black;
+  color: white;
+
+  &:hover,
+  &:focus {
+    border-bottom: 3px solid $dark-grey;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .form__title {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.7px;
+  }
+
+  .form__part--left {
+    width: 120px;
+  }
+
+  .form__part--right {
+    width: 152px;
+  }
+
+  .form__text-label {
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 0.6;
+  }
+
+  .form__info {
+    margin: 0 auto;
+    width: 248px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .form__btn-submit {
+    width: 164px;
+    font-size: 16px;
+    line-height: 36px;
+  }
+}

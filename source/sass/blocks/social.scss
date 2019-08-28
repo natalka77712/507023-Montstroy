@@ -1,0 +1,17 @@
+.social {
+  @include reset-list;
+  display: flex;
+}
+
+.social__item {
+  padding-right: 30px;
+}
+
+.social__icon {
+  fill: $grey-fog;
+
+  &:hover,
+  &:active {
+    fill: white;
+  }
+}

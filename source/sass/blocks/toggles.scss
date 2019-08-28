@@ -15,10 +15,22 @@
     outline: none;
     background-color: $grey-coin;
 
-    &--active {
+    &--active,
+    &--shield {
       width: 8px;
       height: 8px;
       background-color: $light-green;
+    }
+
+    &--ava,
+    &--ntf {
+      width: 4px;
+      height: 4px;
+    }
+
+    &--mirror {
+      width: 6px;
+      height: 6px;
     }
   }
 }
@@ -27,5 +39,20 @@
   .toggles__item {
     width: 6px;
     height: 6px;
+
+    &--ava {
+      width: 8px;
+      height: 8px;
+      background-color: $light-green;
+    }
+
+    &--shield {
+      background-color: $grey-coin;
+    }
+
+    &--ntf {
+      width: 4px;
+      height: 4px;
+    }
   }
 }
