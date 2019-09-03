@@ -3,8 +3,8 @@
   display: flex;
 }
 
-.social__item {
-  padding-right: 30px;
+.social__link {
+  padding: 5px 11px;
 }
 
 .social__icon {
@@ -13,5 +13,51 @@
   &:hover,
   &:active {
     fill: white;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .social {
+    margin: 18px 0 12px auto;
+  }
+
+  .social__icon--vk {
+    width: 22px;
+    height: 22px;
+  }
+
+  .social__icon--tw {
+    width: 17px;
+    height: 18px;
+  }
+
+  .social__icon--fb {
+    width: 17px;
+    height: 16px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .social {
+    margin: 18px 0 37px 0;
+  }
+
+  .social__link {
+    padding: 5px 16px;
+  }
+
+  .social__icon--vk {
+    width: 40px;
+    height: 30px;
+  }
+
+  .social__icon--tw {
+    width: 31px;
+    height: 30px;
+  }
+
+  .social__icon--fb {
+    width: 23px;
+    height: 29px;
   }
 }

@@ -162,7 +162,7 @@
   .main-block {
     background: url("../img/main-mob.jpg") no-repeat;
     background-position: right 0 top -52px;
-    background-color: $dark-blue;
+    background-color: black;
     background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

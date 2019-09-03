@@ -9,8 +9,12 @@
   color: white;
 }
 
+.contacts--mob {
+  display: none;
+}
+
 .contacts__address {
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
 .contacts__email {
@@ -43,4 +47,75 @@
 .contacts__icon {
   margin-right: 15px;
   fill: $emerald;
+}
+
+@media (max-width: $desktop-width) {
+  .contacts__address,
+  .contacts__email,
+  .contacts__phone a,
+  .contacts__note {
+    font-size: 14px;
+  }
+
+  .contacts__note {
+    font-size: 12px;
+  }
+
+  .contacts__address {
+    margin-bottom: 48px;
+  }
+
+  .contacts__icon {
+    margin-right: 15px;
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts--mob {
+    display: block;
+
+    & .contacts__icon {
+      fill: white;
+      opacity: 0.6;
+
+      &--address {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .contacts__address {
+    text-align: left;
+    margin-bottom: 19px;
+    margin-top: 17px;
+  }
+
+  .contacts__email {
+    margin-bottom: 14px;
+  }
+
+  .contacts__icon--phone {
+    margin-right: 3px;
+  }
+
+  .contacts__icon--address {
+    margin-top: 20px;
+  }
+
+  .contacts__phone {
+    margin-bottom: 21px;
+  }
+
+  .contacts__address,
+  .contacts__email,
+  .contacts__phone a {
+    color: white;
+    line-height: 17px;
+
+    .contacts--mob & {
+      opacity: 0.6;
+      line-height: 26px;
+    }
+  }
 }

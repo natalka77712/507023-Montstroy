@@ -196,7 +196,7 @@
 
 @media (max-width: $tablet-width) {
   .projects {
-    margin: 0 auto 32px;
+    margin: 0 auto 37px;
   }
 
   .projects__title {
@@ -204,39 +204,25 @@
   }
 
   .projects__item {
-    margin: 0 0 6px;
+    margin: 0 0 10px;
     padding: 0;
+    display: flex;
+    align-items: center;
     width: 100%;
     min-height: 100px;
   }
 
   .projects__img {
-    position: relative;
+    height: 100%;
     width: 100%;
   }
 
   .projects__header {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    position: absolute;
-    left: 17%;
-    top: 35%;
     font-size: 16px;
     line-height: 24px;
     font-family: $raleway;
-
-    &--futur,
-    &--buratino {
-      left: 25%;
-    }
-
-    &--medial {
-      left: 33%;
-    }
-
-    &--energo {
-      left: 12%;
-    }
   }
 
   .projects__description {
