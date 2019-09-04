@@ -200,21 +200,23 @@
   }
 
   .projects__title {
-    margin: 0 0 19px;
+    margin: 0 0 10px;
   }
 
   .projects__item {
     margin: 0 0 10px;
-    padding: 0;
+    padding: 0 0 percentage(65/245);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
-    min-height: 100px;
+    min-height: auto;
   }
 
   .projects__img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 
   .projects__header {
@@ -223,6 +225,7 @@
     font-size: 16px;
     line-height: 24px;
     font-family: $raleway;
+    transform: translateY(177%);
   }
 
   .projects__description {
