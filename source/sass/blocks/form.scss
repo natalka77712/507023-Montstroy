@@ -52,12 +52,13 @@
 }
 
 .form__text-input {
-  padding: 0;
+  padding: 0 10px;
   line-height: 10px;
   font-family: inherit;
   border: none;
   border-bottom: 1px solid #cccccc;
   color: black;
+  resize: none;
   outline: none;
 
   &:hover,
@@ -79,6 +80,11 @@
     text-decoration: none;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.5);
     color: rgba(0, 0, 0, 0.5);
+
+    &:hover {
+      color: black;
+      border-bottom: 1px dashed black;
+    }
   }
 }
 
@@ -95,6 +101,7 @@
   border-bottom: 3px solid transparent;
   background-color: black;
   color: white;
+  cursor: pointer;
 
   &:hover,
   &:focus {

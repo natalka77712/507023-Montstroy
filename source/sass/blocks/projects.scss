@@ -24,6 +24,11 @@
   min-height: 290px;
   width: 290px;
 
+  &-link {
+    display: block;
+    text-decoration: none;
+  }
+
   &--energo,
   &--buratino {
     padding: 41px 79px 0 27px;
@@ -66,6 +71,7 @@
 
 .projects__description {
   margin: 0;
+  padding-bottom: 40px;
   font-size: 15px;
   line-height: 22px;
   color: white;
@@ -144,6 +150,10 @@
     width: 100%;
     min-height: 180px;
 
+    &-link {
+      text-align: left;
+    }
+
     &--family {
       padding-top: 35px;
     }
@@ -210,6 +220,10 @@
     flex-direction: column;
     width: 100%;
     min-height: auto;
+
+    &-link {
+      text-align: center;
+    }
   }
 
   .projects__img {

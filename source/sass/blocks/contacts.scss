@@ -1,35 +1,38 @@
-.contacts__address,
-.contacts__email,
-.contacts__phone a,
-.contacts__note {
+.contacts__info,
+.contacts__info a {
   margin: 0;
   font-size: 16px;
   line-height: 26px;
   font-family: $roboto;
   color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--address {
+    margin-bottom: 44px;
+  }
+
+  &--email {
+    display: block;
+    margin-bottom: 38px;
+    font-weight: 700;
+  }
+
+  &--phone {
+    margin: 0;
+    font-weight: 700;
+
+    & a {
+      text-decoration: none;
+    }
+  }
 }
 
 .contacts--mob {
   display: none;
-}
-
-.contacts__address {
-  margin-bottom: 44px;
-}
-
-.contacts__email {
-  display: block;
-  margin-bottom: 38px;
-  font-weight: 700;
-}
-
-.contacts__phone {
-  margin: 0;
-  font-weight: 700;
-}
-
-.contacts__phone a {
-  text-decoration: none;
 }
 
 .contacts__note {
@@ -38,6 +41,10 @@
   line-height: 20px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .contacts__item {
@@ -50,19 +57,17 @@
 }
 
 @media (max-width: $desktop-width) {
-  .contacts__address,
-  .contacts__email,
-  .contacts__phone a,
-  .contacts__note {
+  .contacts__info,
+  .contacts__info a {
     font-size: 14px;
+
+    &--address {
+      margin-bottom: 48px;
+    }
   }
 
   .contacts__note {
     font-size: 12px;
-  }
-
-  .contacts__address {
-    margin-bottom: 48px;
   }
 
   .contacts__icon {
@@ -85,16 +90,6 @@
     }
   }
 
-  .contacts__address {
-    text-align: left;
-    margin-bottom: 19px;
-    margin-top: 17px;
-  }
-
-  .contacts__email {
-    margin-bottom: 14px;
-  }
-
   .contacts__icon--phone {
     margin-right: 3px;
   }
@@ -103,19 +98,28 @@
     margin-top: 20px;
   }
 
-  .contacts__phone {
-    margin-bottom: 21px;
-  }
-
-  .contacts__address,
-  .contacts__email,
-  .contacts__phone a {
+  .contacts__info,
+  .contacts__info a {
     color: white;
     line-height: 17px;
 
     .contacts--mob & {
       opacity: 0.6;
       line-height: 26px;
+    }
+
+    &--phone {
+      margin-bottom: 21px;
+    }
+
+    &--email {
+      margin-bottom: 14px;
+    }
+
+    &--address {
+      text-align: left;
+      margin-bottom: 19px;
+      margin-top: 17px;
     }
   }
 }
