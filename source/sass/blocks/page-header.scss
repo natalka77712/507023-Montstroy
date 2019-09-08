@@ -76,6 +76,7 @@
   }
 
   .page-header__contacts {
+    padding: 17px 0;
     font-size: 14px;
     line-height: 17px;
   }
@@ -88,6 +89,7 @@
 @media (max-width: $tablet-width) {
   .page-header {
     padding: 3px 0;
+    background-color: white;
   }
 
   .page-header__index {

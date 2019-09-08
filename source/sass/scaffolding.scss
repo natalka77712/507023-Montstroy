@@ -63,6 +63,7 @@ img {
 
 @media (max-width: $tablet-width) {
   .container {
+    max-width: 768px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;

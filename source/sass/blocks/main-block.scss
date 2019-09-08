@@ -97,30 +97,56 @@
 @media (max-width: $desktop-width) {
   .main-block {
     padding-top: 0;
-    background: url("../img/main-tabl.jpg") no-repeat;
-    background-size: contain;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-tabl@2x.jpg");
-    }
+    background: none;
 
     &::before {
       display: none;
     }
   }
 
+  .main-block__wrapper {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 448px;
+      background: linear-gradient(to top, #141414, transparent);
+      opacity: 0.6;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../img/main-tabl.jpg") no-repeat;
+      background-size: cover;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/main-tabl@2x.jpg");
+      }
+    }
+  }
+
   .main-block__index {
     position: relative;
-    padding: 124px 84px 0;
+    padding: 124px 66px 0 80px;
     min-height: 600px;
   }
 
   .main-block__title {
-    margin: 0 0 17px;
+    margin: 0 0 20px;
     max-width: 620px;
     font-size: 38px;
-    line-height: 46px;
-    letter-spacing: 1.9px;
+    line-height: 44px;
+    letter-spacing: 2px;
     text-align: left;
   }
 
@@ -129,11 +155,11 @@
   }
 
   .main-block__description {
-    margin: 0 0 89px;
+    margin: 0 0 82px;
     padding: 0;
     max-width: 600px;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
     font-weight: 400;
   }
 
@@ -159,16 +185,18 @@
 }
 
 @media (max-width: $tablet-width) {
-  .main-block {
+  .main-block__wrapper::before {
+    top: -23px;
+    height: 80%;
+    z-index: -1;
     background: url("../img/main-mob.jpg") no-repeat;
-    background-position: right 0 top -52px;
     background-color: black;
-    background-size: contain;
+    background-size: cover;
+    background-position: right;
+  }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/main-mob@2x.jpg");
-      background-size: contain;
-    }
+  .main-block__wrapper::after {
+    display: none;
   }
 
   .main-block__index {
@@ -185,7 +213,7 @@
     order: 1;
     max-width: 280px;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 20px;
     letter-spacing: 0.8px;
     text-align: center;
   }
@@ -196,7 +224,6 @@
     order: 2;
     max-width: 250px;
     font-size: 16px;
-    line-height: 19px;
     font-weight: 400;
     font-family: $roboto;
     text-align: center;
